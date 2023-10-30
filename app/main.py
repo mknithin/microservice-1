@@ -8,7 +8,7 @@ async def get_say():
 
 @app.get("/wish")
 async def get_wish():
-    return {"message": "Hello there good morning!"}
+    return {"message": "Hello there good night!"}
 
 
 @app.get("/")
