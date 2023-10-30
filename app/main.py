@@ -7,6 +7,10 @@ app = FastAPI()
 async def get_public():
     return {"message": "Do you like public speaking?"}
 
+@app.get("/private")
+async def get_luck():
+    return {"message": "Do you like private speaking?"}
+
 @app.get("/luck")
 async def get_luck():
     return {"message": "Do you feel lucky, punk?"}
