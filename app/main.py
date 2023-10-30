@@ -2,6 +2,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+@app.get("/private")
+async def get_luck():
+    return {"message": "Do you like private speaking?"}
+
 @app.get("/luck")
 async def get_luck():
     return {"message": "Do you feel lucky, punk?"}
